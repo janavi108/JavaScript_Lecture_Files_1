@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Date</title>
+    <style>
+        body {
+            background-color: rgba(0, 128, 128, 0.767);
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Date set Manually :</h4>
+    <script>
+    let display1 = new Date("2025.08.15")
+        document.write(display1 + "<br>" + "<br>")
+        display1.setDate(13)
+        display1.setHours(0,0,0,0)
+        display1.setFullYear(2004) 
+
+        document.write("Set New Date/Time: ", display1 + "<br>"+ "<br>")
+        
+    </script>
+</body>
+
+</html>
