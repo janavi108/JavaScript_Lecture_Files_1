@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Datatypes</title>
+    <style>
+        body {
+            background-color: rgba(0, 128, 128, 0.767);
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let student = {
+            name: "Tina",
+            age: 21,
+            isEnrolled: true,
+            subjects: ["Math", "Science", "English"],
+            greet: function () {
+                return "Hello, my name is " + this.name;
+            }
+        };
+
+        // You have to take help of keys to get the output in document.write 
+
+        document.write("Name : ", student.name + "<br>");
+        document.write("Age : ", student.age + "<br>");
+        document.write("Subjects : ", student.subjects + "<br>" + "<br>");
+        document.write(student.greet() + "<br>");
+
+        student['name'] = "Neha"
+        student['skill'] = "html"
+        delete student.age
+        console.log(student);
+
+        alert(student.name)
+        delete student.name
+        alert(student.name)
+
+
+// Objects can store multiple values under one variable.
+// Values can be of any type(even functions or other objects).
+// Objects are mutable(you can change values after creation).
+
+
+    </script>
+</body>
+
+</html>
