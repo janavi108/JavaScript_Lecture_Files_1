@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Date</title>
+    <style>
+        body {
+            background-color: rgba(0, 128, 128, 0.767);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>The Math object is a static, built-in object that provides properties and methods for mathematical constants and
+        functions. It does not have a constructor and its methods are called directly on the Math object itself.</h2>
+    <h3>Date Time Display :</h3>
+    <script>
+        let display = new Date()
+        document.write("Current Date and Time : ", display + "<br>" + "<br>" )
+        document.write("Get Date : ", display.getDate()+ "<br>")
+        document.write("Day : ", display.getDay() + "<br>" )
+        document.write("Get Hours : " ,display.getHours()+ "<br>")
+        document.write("Get Month : ", display.getMonth()+ "<br>")
+        document.write("Full Year : ", display.getFullYear() + "<br>"  + "<br>" )
+
+        document.write("Get Date + 3 : ",display.getDate() + 3 + "<br>"  + "<br>")
+        
+    </script>
+</body>
+
+</html>
