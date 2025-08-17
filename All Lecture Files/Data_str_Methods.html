@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+    <style>
+        body{
+            background-color: rgba(0, 128, 128, 0.767);
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let text = "Javascript is very easy language, it is dynamically typed so it is easy to learn for its learners."
+        let text1 = " Javascript is used in both front-end and back-end, its makes a dynamic websites"
+        // Length Method 
+        document.write(text + "<br>" + "<br>")
+        document.write("Length of the string :", text.length + "<br>" + "<br>")
+
+        // -------------------------------------------------------------------------------------------------
+
+
+
+        // Replace method 
+        document.write("Replace Method : ", text.replace("easy", "hard") + "<br>")
+        document.write("Replace-all Method : ", text.replaceAll("easy", "hard") + "<br>" + "<br>")
+
+        // -------------------------------------------------------------------------------------------------
+
+
+
+        // Concatenation Method 
+        document.write("Concatenation Method : ", text.concat(text1) + "<br>" + "<br>")
+
+        // -------------------------------------------------------------------------------------------------
+
+
+
+        // Slice Method 
+        document.write("Slice Method : ", text.slice(0, 24) + "<br>")
+        let text2 = "Javascript is easy "
+        document.write("Slice Method : ", text2.slice(0, 10) + "<br>")
+        document.write("Slice Method : ", text2.slice(-5, -1) + "<br>" + "<br>")
+
+        // -------------------------------------------------------------------------------------------------
+
+
+
+        // Substring Method-substring(start, end) extracts characters from start index up to but not including end index.
+        document.write("Substring Method : ", text.substring(2, 4) + "<br>")
+        // Index 2 → 'v'
+        // Index 3 → 'a'
+        // Index 4 → stop(not included)
+
+        // Substr Method- substr(start, length) extracts length characters starting from start index.
+        document.write("Substr Method : ", text.substr(2, 4) + "<br>" + "<br>")
+        // start = 2 → 'v' (index 2)
+        // length = 4 → Take 4 characters starting from index 2.
+        // From index 2:
+        // v a s c ... → "vasc"
+
+        // -------------------------------------------------------------------------------------------------
+
+
+
+        // toUpperCase() → Converts string to uppercase. 
+        document.write("Upper Case Conversion : ", text.toUpperCase() + "<br>")
+
+        // toLowerCase() → Converts string to lowercase. 
+        document.write("Lower Case Conversion : ", text.toLowerCase() + "<br>" + "<br>" + "<br>")
+
+        // -------------------------------------------------------------------------------------------------
+
+
+
+        let text3 = "          Hello      World                "
+        document.write(text3 + "<br>")
+        document.write("text length : ", text3.length + "<br>" + "<br>")
+
+        // trim() → Removes spaces from both ends. 
+        result1 = text3.trim()
+
+        // trimStart() / trimLeft() → Removes from start. 
+        result2 = text3.trimStart()
+
+        // trimEnd() / trimRight() → Removes from end. 
+        result3 = text3.trimEnd()
+
+        document.write("Trim Method : ", result1.length + "<br>")
+        document.write("Trim-start Method : ", result2.length + "<br>")
+        document.write("Trim-end Method : ", result3.length + "<br>" + "<br>")
+
+        // -------------------------------------------------------------------------------------------------
+
+
+
+        // padStart(length, padString) → Adds padding to start. 
+        let text4 = "GoodDay Everyone"
+        document.write("Pad-start text: ", text4.padStart(20, "*") + "<br>")
+        let result4 = text4.padStart(25, "*") + "<br>" + "<br>"
+
+        // Length of pad-Start text 
+        document.write("Text length : ", result4.length + "<br>" + "<br>")
+
+        // padEnd(length, padString) → Adds padding to end. 
+        let result5 = text4.padEnd(20, "#") + "<br>"
+        document.write("Pad-end text : ", text4.padEnd(20, "#") + "<br>")
+
+        // Length of pad-End text 
+        document.write("Text length : ", result5.length + "<br>" + "<br>" + "<br>")
+
+        // -------------------------------------------------------------------------------------------------
+
+
+
+        // indexOf(searchValue, start) → First occurrence position, or -1 if not found. 
+        document.write("Index-of letter in the text: ", text4.indexOf("D")+ "<br>")
+        // lastIndexOf(searchValue) → Last occurrence position. 
+        document.write("Last-index-of text : ", text4.lastIndexOf("o")+ "<br>"+ "<br>"+ "<br>")
+        // repeat(count) → Repeats string count times. 
+        document.write("Repeat Method : ", text4.repeat("3")+ "<br>"+ "<br>"+ "<br>")
+        // startsWith(searchValue) → Checks start. 
+        document.write("Startwith Methods : ", text4.startsWith("G")+ "<br>")
+        // endsWith(searchValue) → Checks end. 
+        document.write("Endswith Method : ", text4.endsWith("e")+ "<br>"+ "<br>"+ "<br>")
+    </script>
+</body>
+
+</html>
